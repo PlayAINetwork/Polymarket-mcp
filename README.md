@@ -52,13 +52,14 @@ CLOB_PASS_PHRASE=your_passphrase
 Add the server to your MCP settings file:
 
 ```json
+
 {
   "mcpServers": {
-    "polymarket": {
-      "command": "node",
-      "args": ["/path/to/your/index.js"],
+    "poly": {
+      "command": "npx",
+      "args": ["polymarket-mcp"],
       "env": {
-        "PRIVATE_KEY": "your_private_key_here"
+        "PRIVATE_KEY": ""
       }
     }
   }
